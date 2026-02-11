@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Codex Health",
+    "slug": "codex-health",
+    "scheme": "codexhealth",
+    "version": "0.1.0",
+    "newArchEnabled": true,
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0E0F12"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.walletchat.healthkit",
+      "deploymentTarget": "15.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0E0F12"
+      },
+      "package": "com.walletchat.healthkit"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      [
+        "@kingstinct/react-native-healthkit",
+        {
+          "healthSharePermission": "Codex Health reads step count and workouts to power your activity dashboard.",
+          "healthUpdatePermission": "Codex Health can write workouts and mindful minutes you log in the app."
+        }
+      ]
+    ]
+  }
+}
